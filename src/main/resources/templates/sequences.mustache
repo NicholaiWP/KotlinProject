@@ -1,0 +1,31 @@
+<header>
+    <link rel="stylesheet" href="/sequence.css">
+</header>
+<body class="backgroundSequence">
+<h1>Sequences</h1>
+
+<!--A div can be seen as a 'box' wherein you can place other html elements-->
+<!--I'm putting my form into this 'box' so that the whole form is contained within the div element-->
+<form action="" name="myForm" method="post">
+    <p>Choose a table number <br>
+        <input type="number" name="tal" placeholder="e.g. '1', '2'" autocomplete="off" required>
+    </p>
+
+    <p>Enter amount of table numbers you want<br>
+        <input type="number" name="amount" max="10" placeholder="number '1'-'10'" autocomplete="off" required>
+    </p>
+
+    <br>
+    <input type="submit" value="submit">
+
+    <br>
+    <br>
+    <p>Form 1 Input: {{#tal}} {{tal}} {{/tal}} </p>
+    <p>Form 2 Input: {{#amount}} {{amount}} {{/amount}}</p>
+    <p>Result:{{#result}} {{result}} {{/result}}</p>
+
+</form>
+
+<a href="/">Back to front page</a>
+<hr>
+</body>

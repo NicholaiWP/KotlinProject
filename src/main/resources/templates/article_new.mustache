@@ -1,0 +1,20 @@
+{{> header}}
+
+<section>
+    <header>
+        <h1>{{article.title}}</h1>
+        <p>Written by  <strong>{{article.author.firstname}}</strong>, on <strong>{{article.addedAt}}</strong></p>
+    </header>
+    <div>
+       <h3><u>{{article.headline}}</u></h3>
+        <p> <strong>Review:</strong> {{article.content}}</p>
+        <b>Word count:{{wordCount}}</b>
+        <br>
+        <b>Lix number: {{lixNum}}</b>
+        <br>
+        <br>
+        <a href="/">Back to front page</a>
+    </div>
+</section>
+
+{{> footer}}

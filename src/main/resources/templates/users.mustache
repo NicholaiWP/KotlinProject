@@ -1,0 +1,31 @@
+<header>
+    <link rel="stylesheet" href="/users.css">
+</header>
+<body class="backgroundUsers">
+<div>
+    {{#users}}
+    <section>
+        <header>
+            <div>
+                <h1>{{firstname}}</h1>
+                <h3><p> Username: {{login}}, First name:{{firstname}}, Last name: {{lastname}}, Account id: {{id}} </p></h3>
+                {{#description}}
+                <p>{{description}}</p>
+                {{/description}}
+
+                {{^description}}
+                No description
+                {{/description}}
+
+            </div>
+        </header>
+    </section>
+    {{/users}}
+</div>
+
+<br>
+
+<a href="/">Back to front page</a>
+<hr>
+</body>
+

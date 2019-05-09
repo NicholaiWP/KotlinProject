@@ -1,0 +1,25 @@
+{{> header}}
+
+<div class="topnav">
+    <a href="/users">User list</a>
+    <a href="/sequences">Make sequence</a>
+    <a href="/calculator">Use calculator</a>
+</div>
+
+<h1>{{title}}</h1>
+
+<div>
+    {{#articles}}
+    <section>
+        <header>
+            <h2><a href="/article/{{slug}}">{{title}}</a></h2>
+            <div>By  <strong>{{author.firstname}}</strong>, on <strong>{{addedAt}}</strong></div>
+        </header>
+        <div>
+            {{headline}}
+        </div>
+    </section>
+    {{/articles}}
+</div>
+
+{{> footer}}

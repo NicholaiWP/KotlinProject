@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="/calculator.css">
+</head>
+<body class="backgroundCalculator">
+<div>
+    <form action="" name="calculator"  method="post">
+        <input type="number" step="0.00001"  name="numOne" placeholder="Enter any number" autocomplete="off" required>
+        <input type="number" step="0.00001" name="numTwo" placeholder="Enter another number" autocomplete="off" required>
+        <input type="submit" value="submit">
+    </form>
+
+    <p>Number 1 Input: {{#numOne}} {{numOne}} {{/numOne}} </p>
+    <p>Number 2 Input: {{#numTwo}} {{numTwo}} {{/numTwo}}</p>
+
+    <p>Division Result:{{#divResult}} {{divResult}} {{/divResult}}</p>
+    <p>Plus Result:{{#plusResult}} {{plusResult}} {{/plusResult}}</p>
+    <p>Multiplication Result:{{#timesResult}} {{timesResult}} {{/timesResult}}</p>
+    <p>Minus Result:{{#minusResult}} {{minusResult}} {{/minusResult}}</p>
+    <p>Modulo Result:{{#moduloResult}} {{moduloResult}} {{/moduloResult}}</p>
+
+</div>
+
+<a href="/">Back to front page</a>
+<hr>
+</body>
+
+</html>
